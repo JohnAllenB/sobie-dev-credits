@@ -1,4 +1,3 @@
-/* Resetting basic styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -7,20 +6,18 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-start; /* Changed to start so scrolling works */
+    justify-content: flex-start;
     height: 100vh;
-    overflow-y: auto; /* Ensures vertical scrolling */
+    overflow-y: auto;
 }
 
-/* Styling the H1 */
 h1 {
     text-align: center;
     font-size: 2rem;
     color: #333;
-    margin: 20px 0; /* Added margin to keep spacing consistent */
+    margin: 20px 0;
 }
 
-/* Styling the list */
 ul {
     list-style-type: none;
     margin: 0;
@@ -30,8 +27,8 @@ ul {
     border-radius: 8px;
     overflow: hidden;
     width: 300px;
-    max-height: calc(100vh - 100px); /* Limits height of the list */
-    overflow-y: auto; /* Enables scroll if the list exceeds max height */
+    max-height: calc(100vh - 100px);
+    overflow-y: auto;
 }
 
 li {
