@@ -7,8 +7,9 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start; /* Changed to start so scrolling works */
     height: 100vh;
+    overflow-y: auto; /* Ensures vertical scrolling */
 }
 
 /* Styling the H1 */
@@ -16,7 +17,7 @@ h1 {
     text-align: center;
     font-size: 2rem;
     color: #333;
-    margin-bottom: 20px;
+    margin: 20px 0; /* Added margin to keep spacing consistent */
 }
 
 /* Styling the list */
@@ -29,6 +30,8 @@ ul {
     border-radius: 8px;
     overflow: hidden;
     width: 300px;
+    max-height: calc(100vh - 100px); /* Limits height of the list */
+    overflow-y: auto; /* Enables scroll if the list exceeds max height */
 }
 
 li {
